@@ -15,3 +15,7 @@ response = requests.get(URL, params=params)
 data = "mypostdata"
 response = requests.post(URL, data=data)
 # request.post(URL, data=data, headers=headers, cookies = cookies)
+
+print(response.url)
+print(response.status_code)
+print(response.text)
