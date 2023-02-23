@@ -14,7 +14,7 @@ def PostMain() :
     print(arg1)
     return 'DONE'
     
-@app.route('/all', methods=['GET'])
+@app.route('/all', methods=['GET', 'POST'])
 def GetAll() :
     print("--------   INFO   -------- ")
     print(request)
